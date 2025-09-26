@@ -6,10 +6,47 @@ using System.Threading.Tasks;
 
 namespace TipoNoPrimitivos
 {
-    internal class Program
+    public class Persona
+    {
+        public string nombre;
+        public int edad;
+        public int id;
+        public string nacionalidad;
+        public long telefono;
+        public int salario;
+        public void MostrarInformacion()
+        {
+            Console.WriteLine("mi Nombre es: " + nombre);
+        }
+    }
+
+    class Program
     {
         static void Main(string[] args)
         {
+            Persona usuario1 = new Persona();
+            usuario1.nombre = "Juan";
+            usuario1.edad = 30;
+            usuario1.id = 30136548;
+            usuario1.nacionalidad = "Mexicana";
+            usuario1.telefono = 5544332211;
+            usuario1.salario = 15000;
+            usuario1.MostrarInformacion();
+            
+            Persona usuario2 = new Persona();
+            usuario2.nombre = "Maria";
+            usuario2.edad = 25;
+            usuario2.id = 30136549;
+            usuario2.nacionalidad = "Dominicana";
+            usuario2.telefono = 5544332212;
+            usuario2.salario = 20000;
+            usuario2.MostrarInformacion();
+            Console.ReadLine();
         }
     }
+
+
+
+
+
 }
