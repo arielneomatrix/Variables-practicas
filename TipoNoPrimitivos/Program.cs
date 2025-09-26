@@ -19,9 +19,9 @@ namespace TipoNoPrimitivos
             Console.WriteLine("Nombre: " + nombre);
         }
     }
-    public class Calculadora
+    public static class Calculadora
     {
-        public int sumar(int a, int b)
+        public static int sumar(int a, int b)
         {
             return a + b;
         }
@@ -59,6 +59,8 @@ namespace TipoNoPrimitivos
             usuario1.salario = 15000;
             usuario1.MostrarInformacion();
             
+            
+
             Persona usuario2 = new Persona();
             usuario2.nombre = "Maria";
             usuario2.edad = 25;
@@ -68,10 +70,14 @@ namespace TipoNoPrimitivos
             usuario2.salario = 20000;
             usuario2.MostrarInformacion();
             Console.ReadLine();
+
+          
+            int resultado = Calculadora.sumar(5, 10);
+            Console.WriteLine("Resultado de la suma: " + resultado);
         }
     }
 
-
+    // al fin voy entendiendo esto
 
 
 
