@@ -16,10 +16,36 @@ namespace TipoNoPrimitivos
         public int salario;
         public void MostrarInformacion()
         {
-            Console.WriteLine("mi Nombre es: " + nombre);
+            Console.WriteLine("Nombre: " + nombre);
+        }
+    }
+    public class Calculadora
+    {
+        public int sumar(int a, int b)
+        {
+            return a + b;
+        }
+
+    }
+    public class Empleado : Persona
+    {
+        public string puesto;
+        public int horasTrabajadas;
+        public void MostrarInformacionEmpleado()
+        {
+            Console.WriteLine("Puesto: " + puesto);
         }
     }
 
+    public class Cliente : Persona
+    {
+        public string direccion;
+        public int comprasRealizadas;
+        public void MostrarInformacionCliente()
+        {
+            Console.WriteLine("Direccion: " + direccion);
+        }
+    }
     class Program
     {
         static void Main(string[] args)
